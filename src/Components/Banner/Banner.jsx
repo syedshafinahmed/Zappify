@@ -12,7 +12,7 @@ const Banner = () => {
                 <a href='https://www.apple.com/app-store/' target="_blank" className='btn '><span className='flex items-center gap-x-3'><img className='w-6' src={AppStore} alt="" />App Store</span></a>
             </div>
             <div className='flex justify-center'>
-                <img className='mt-10' src={Hero} alt="" />
+                <img className='mt-10 px-15 md:px-0 lg:px-0' src={Hero} alt="" />
             </div>
             <div className='text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-15'>
                 <h1 className='text-center text-2xl md:text-5xl font-bold mb-10'>Trusted by Millions, Built for You</h1>

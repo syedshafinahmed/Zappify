@@ -3,8 +3,10 @@ import React from 'react';
 const List = ({ dat }) => {
     return (
         <div>
-            <div key={dat.id} className='border p-5 shadow-3xl bg-white rounded-xl'>
-                <img src={dat.image} alt="" />
+            <div key={dat.id} className='shadow-2xl p-5 shadow-3xl bg-white rounded-xl'>
+                <div className='flex justify-center'>
+                    <img src={dat.image} alt="" />
+                </div>
                 <p className='text-center text-2xl font-bold py-5'>{dat.title}</p>
                 <div className='flex justify-between text-xl'>
                     <span className='font-bold badge badge-success'><i class="fa-solid fa-download"></i>{dat.downloads}</span>
