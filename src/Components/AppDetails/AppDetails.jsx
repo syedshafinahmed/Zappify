@@ -7,7 +7,7 @@ const AppDetails = () => {
   const data = useLoaderData();
   return (
     <div className='bg-gray-200 py-20'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto px-20'>
         <div className='flex gap-x-15 items-center'>
           <img className='h-90' src={data.image} alt="" />
           <div>
@@ -34,7 +34,12 @@ const AppDetails = () => {
             </div>
             <button className='btn bg-[#00D390] text-white'>Install Now ({data.size})</button>
           </div>
-        </div>
+        </div><br />
+        <div>
+          {/* graph */}
+        </div><br />
+        <p className='text-[#001931] font-semibold text-2xl'>Description</p><br />
+        <p className='text-[#627382] font-xl text-justify'>{data.description}</p>
       </div>
     </div>
   );
