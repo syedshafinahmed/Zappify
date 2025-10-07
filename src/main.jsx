@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -10,8 +10,10 @@ import Apps from './Components/Apps/Apps.jsx';
 import Installation from './Components/Installation/Installation.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import AppDetails from './Components/AppDetails/AppDetails.jsx';
+import { BounceLoader, ClipLoader } from "react-spinners";
 
 
+const dataPromise = fetch('/data.json').then(res => res.json());
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,13 +22,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "home",
-        loader: () => fetch('/data.json').then(res => res.json()),
-        Component: Home
+        // loader: () => fetch('/data.json').then(res => res.json()),
+        element:
+          <Suspense fallback={<span className='fixed inset-0 flex justify-center items-center bg-white z-50'><BounceLoader color="#4F46E5" size={100} /></span>}>
+            <Home dataPromise={dataPromise}></Home>
+          </Suspense>
       },
       {
         path: "apps",
-        loader: () => fetch('/data.json').then(res => res.json()),
-        Component: Apps
+        // loader: () => fetch('/data.json').then(res => res.json()),
+        element:
+          <Suspense fallback={<span className='fixed inset-0 flex justify-center items-center bg-white z-50'><BounceLoader color="#4F46E5" size={100} /></span>}>
+            <Apps dataPromise={dataPromise}></Apps>
+          </Suspense>
       },
       {
         path: "installation",

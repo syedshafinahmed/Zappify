@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import { useLoaderData } from 'react-router';
 import List from '../List/List';
 
-const Apps = () => {
-    const data = useLoaderData();
+const Apps = ({dataPromise}) => {
+    const data = use(dataPromise);
     return (
         <div className='bg-gray-300 pb-20'>
             <div className='max-w-7xl mx-auto'>

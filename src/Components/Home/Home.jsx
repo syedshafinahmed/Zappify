@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 import Banner from '../Banner/Banner';
 import TrendingApps from '../TrendingApps/TrendingApps';
 import { useLoaderData } from 'react-router';
 
-const Home = () => {
-    const data = useLoaderData();
+const Home = ({dataPromise}) => {
+    const data = use(dataPromise);
     // console.log(data);
     return (
         <div>
