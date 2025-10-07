@@ -2,11 +2,13 @@ import React from 'react';
 import Logo from '../../assets/logo.png'
 import { Link, NavLink } from 'react-router';
 import '../Header/Header.css'
+import Banner from '../Banner/Banner';
+import Home from '../Home/Home';
 const Header = () => {
     const links =
         <>
             <nav className='font-medium'>
-                <NavLink to='/' className='m-3'>Home</NavLink>
+                <NavLink to='/home' className='m-3'>Home</NavLink>
                 <NavLink to='/apps' className='m-3'>Apps</NavLink>
                 <NavLink to='/installation' className='m-3'>Installation</NavLink>
             </nav>
@@ -25,7 +27,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <span className='flex items-center gap-x-2'><img className='h-10' src={Logo} alt="" /><p className='bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text font-bold text-3xl'>Zappify</p></span>
+                    <Link to='/home' className='flex items-center gap-x-2'><img className='h-10' src={Logo} alt="" /><p className='bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text font-bold text-3xl'>Zappify</p></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -33,9 +35,10 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href='https://github.com/syedshafinahmed' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><span className='flex items-center gap-x-2'><i class="fa-brands fa-github"></i><p>Contribute</p></span></a>
+                    <a href='https://github.com/syedshafinahmed' target="_blank" className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><span className='flex items-center gap-x-2'><i class="fa-brands fa-github"></i><p>Contribute</p></span></a>
                 </div>
             </div>
+
         </div>
     );
 };
