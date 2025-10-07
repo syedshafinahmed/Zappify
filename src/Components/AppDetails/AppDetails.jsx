@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router';
 import Download from '../../assets/icon-downloads.png';
 import Review from '../../assets/icon-review.png';
 import Rating from '../../assets/icon-ratings.png'
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 const AppDetails = () => {
   const data = useLoaderData();
   return (
@@ -36,7 +37,17 @@ const AppDetails = () => {
           </div>
         </div><br />
         <div>
-          {/* graph */}
+          <p className='text-[#001931] font-semibold text-2xl mt-7'>Ratings</p><br />
+          <div className='px-0 md:px-10'>
+            <ResponsiveContainer width="100%" height={236}>
+              <BarChart data={data.ratings} layout="vertical">
+                <XAxis type='number' dataKey="count"></XAxis>
+                <YAxis type='category' dataKey="name"></YAxis>
+                <Tooltip></Tooltip>
+                <Bar dataKey="count" fill="#FF8811" barSize={20} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
         </div><br />
         <p className='text-[#001931] font-semibold text-2xl'>Description</p><br />
         <p className='text-[#627382] font-xl text-justify'>{data.description}</p>

@@ -22,8 +22,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
+        index: true,
+        element:
+          <Suspense fallback={<span className='fixed inset-0 flex justify-center items-center bg-white z-50'><BounceLoader color="#4F46E5" size={100} /></span>}>
+            <Home dataPromise={dataPromise}></Home>
+          </Suspense>
+      },
+      {
         path: "home",
-        // loader: () => fetch('/data.json').then(res => res.json()),
         element:
           <Suspense fallback={<span className='fixed inset-0 flex justify-center items-center bg-white z-50'><BounceLoader color="#4F46E5" size={100} /></span>}>
             <Home dataPromise={dataPromise}></Home>
