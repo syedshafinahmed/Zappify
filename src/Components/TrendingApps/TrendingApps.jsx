@@ -9,7 +9,12 @@ const TrendingApps = ({ data }) => {
                 <p className='text-[#627382] text-sm md:text-xl'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             {
-                data.map(dat => <p>{dat.title}</p>)
+                data.map(dat => 
+                    <div key={dat.id}>
+                        <p>{dat.title}</p>
+                        <img src={dat.image} alt="" />
+                    </div>
+                )
             }
         </div>
     );

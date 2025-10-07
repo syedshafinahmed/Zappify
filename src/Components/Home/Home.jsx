@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <TrendingApps data={data}></TrendingApps>
+            <TrendingApps key={data.id} data={data}></TrendingApps>
         </div>
     );
 };
