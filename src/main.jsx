@@ -9,6 +9,7 @@ import Root from './Components/Root/Root.jsx';
 import Apps from './Components/Apps/Apps.jsx';
 import Installation from './Components/Installation/Installation.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/home",
+        loader: () => fetch('/data.json').then(res=> res.json()),
         Component: Home
       },
       {
