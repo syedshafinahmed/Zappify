@@ -8,12 +8,14 @@ import Home from './Components/Home/Home.jsx';
 import Root from './Components/Root/Root.jsx';
 import Apps from './Components/Apps/Apps.jsx';
 import Installation from './Components/Installation/Installation.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/home",
