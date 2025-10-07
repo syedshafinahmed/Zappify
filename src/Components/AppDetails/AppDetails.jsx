@@ -1,0 +1,43 @@
+import React from 'react';
+import { useLoaderData } from 'react-router';
+import Download from '../../assets/icon-downloads.png';
+import Review from '../../assets/icon-review.png';
+import Rating from '../../assets/icon-ratings.png'
+const AppDetails = () => {
+  const data = useLoaderData();
+  return (
+    <div className='bg-gray-200 py-20'>
+      <div className='max-w-7xl mx-auto'>
+        <div className='flex gap-x-15 items-center'>
+          <img className='h-90' src={data.image} alt="" />
+          <div>
+            <div>
+              <p className='text-[#001931] font-bold text-4xl'>{data.title}</p>
+              <p className='font-semibold text-xl mt-3'>Developed by <span className='text-[#632EE3]'>{data.companyName}</span></p>
+            </div>
+            <div className='flex gap-x-10 text-[#001931] py-10'>
+              <div className='flex flex-col items-center'>
+                <img src={Download} alt="" />
+                <p>Downloads</p>
+                <h1 className='font-black text-3xl'>{data.downloads}</h1>
+              </div>
+              <div className='flex flex-col items-center'>
+                <img src={Rating} alt="" />
+                <p>Average Ratings</p>
+                <h1 className='font-black text-3xl'>{data.ratingAvg}</h1>
+              </div>
+              <div className='flex flex-col items-center'>
+                <img src={Review} alt="" />
+                <p>Total Reviews</p>
+                <h1 className='font-black text-3xl'>{data.reviews}</h1>
+              </div>
+            </div>
+            <button className='btn bg-[#00D390] text-white'>Install Now ({data.size})</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AppDetails;

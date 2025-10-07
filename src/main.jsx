@@ -9,6 +9,7 @@ import Root from './Components/Root/Root.jsx';
 import Apps from './Components/Apps/Apps.jsx';
 import Installation from './Components/Installation/Installation.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
+import AppDetails from './Components/AppDetails/AppDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path: "/home",
+        path: "home",
         loader: () => fetch('/data.json').then(res => res.json()),
         Component: Home
       },
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "installation",
         Component: Installation
+      },
+      {
+        path: "appdetails/:id",
+        loader: ({ params }) =>
+          fetch('/data.json')
+            .then(res => res.json())
+            .then(data => data.find(item => item.id === Number(params.id))),
+        Component: AppDetails
       }
     ]
   },
