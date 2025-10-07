@@ -8,8 +8,8 @@ const AppDetails = () => {
   return (
     <div className='bg-gray-200 py-20'>
       <div className='max-w-7xl mx-auto px-20'>
-        <div className='flex gap-x-15 items-center'>
-          <img className='h-90' src={data.image} alt="" />
+        <div className='flex flex-col md:flex-row gap-x-15 items-center'>
+          <img className='h-70 md:h-90 mb-5 md:mb-5' src={data.image} alt="" />
           <div>
             <div>
               <p className='text-[#001931] font-bold text-4xl'>{data.title}</p>
@@ -18,17 +18,17 @@ const AppDetails = () => {
             <div className='flex gap-x-10 text-[#001931] py-10'>
               <div className='flex flex-col items-center'>
                 <img src={Download} alt="" />
-                <p>Downloads</p>
+                <p className='text-xs md:text-base py-1'>Downloads</p>
                 <h1 className='font-black text-3xl'>{data.downloads}</h1>
               </div>
               <div className='flex flex-col items-center'>
                 <img src={Rating} alt="" />
-                <p>Average Ratings</p>
+                <p className='text-xs md:text-base py-1'>Average Ratings</p>
                 <h1 className='font-black text-3xl'>{data.ratingAvg}</h1>
               </div>
               <div className='flex flex-col items-center'>
                 <img src={Review} alt="" />
-                <p>Total Reviews</p>
+                <p className='text-xs md:text-base py-1'>Total Reviews</p>
                 <h1 className='font-black text-3xl'>{data.reviews}</h1>
               </div>
             </div>
