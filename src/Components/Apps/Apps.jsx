@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import { useLoaderData } from 'react-router';
+
 import List from '../List/List';
 
 const Apps = ({dataPromise}) => {

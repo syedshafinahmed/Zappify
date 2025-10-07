@@ -11,6 +11,7 @@ import Installation from './Components/Installation/Installation.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import AppDetails from './Components/AppDetails/AppDetails.jsx';
 import { BounceLoader, ClipLoader } from "react-spinners";
+import InvalidApp from './Components/InvalidApp/InvalidApp.jsx';
 
 
 const dataPromise = fetch('/data.json').then(res => res.json());
@@ -46,7 +47,8 @@ const router = createBrowserRouter([
           fetch('/data.json')
             .then(res => res.json())
             .then(data => data.find(item => item.id === Number(params.id))),
-        Component: AppDetails
+        Component: AppDetails,
+        errorElement: <InvalidApp></InvalidApp>
       }
     ]
   },

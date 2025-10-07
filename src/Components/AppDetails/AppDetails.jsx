@@ -5,15 +5,6 @@ import Review from '../../assets/icon-review.png';
 import Rating from '../../assets/icon-ratings.png'
 const AppDetails = () => {
   const data = useLoaderData();
-  if (!data) {
-    return (
-      <div className='flex flex-col items-center justify-center h-screen'>
-        <h1 className='text-4xl font-bold mb-4'>App Not Found</h1>
-        <p className='mb-6'>The app you are looking for does not exist.</p>
-        <Link to='/home' className='btn btn-primary'>Go Back Home</Link>
-      </div>
-    );
-  }
   return (
     <div className='bg-gray-200 py-20'>
       <div className='max-w-7xl mx-auto px-20'>

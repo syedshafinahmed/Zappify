@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Banner from '../Banner/Banner';
 import TrendingApps from '../TrendingApps/TrendingApps';
-import { useLoaderData } from 'react-router';
+
 
 const Home = ({dataPromise}) => {
     const data = use(dataPromise);
