@@ -12,7 +12,7 @@ const Apps = ({dataPromise}) => {
                     <p className='text-[#627382] text-sm md:text-xl'>Explore All Apps on the Market developed by us. We code for Millions.</p>
                 </div>
                 <div className='flex flex-col md:flex-row px-10 md:px-0  items-center justify-between mb-15'>
-                    <h1 className='font-bold text-2xl mb-5 md:mb-0'>({data.length}) Apps found</h1>
+                    <h1 className='font-bold text-2xl mb-5 md:mb-0'>{data.length} Apps found</h1>
                     <label className="input">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
