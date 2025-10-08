@@ -60,10 +60,10 @@ const Installation = () => {
                         apps.map(app => (
                             <div className='flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between bg-white rounded-xl p-10 items-center mb-5 mx-3 md:mx-0'>
                                 <div className='flex items-center gap-x-10 '>
-                                    <img className='w-32 md:w-20' src={app.image} alt="" />
+                                    <img className='w-20' src={app.image} alt="" />
                                     <div>
                                         <h1 className='text-[#001931] font-medium text-xl mb-3'>{app.title}</h1>
-                                        <div className='flex justify-center items-center gap-x-5'>
+                                        <div className='flex justify-center items-center gap-x-2 md:gap-x-5'>
                                             <span className='font-bold badge badge-success'><i class="fa-solid fa-download"></i>{app.downloads}</span>
                                             <span className='font-bold badge badge-warning my-3 md:my-0'><i class="fa-solid fa-star"></i>{app.ratingAvg}</span>
                                             <p className='text-[#627382]'>{app.size}</p>
