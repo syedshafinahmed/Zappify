@@ -6,6 +6,19 @@ import Rating from '../../assets/icon-ratings.png'
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 const AppDetails = () => {
   const data = useLoaderData();
+
+  const handleInstall = () => {
+    const existing = JSON.parse(localStorage.getItem("installedApps")) || [];
+
+    if(!existing.includes(data.id)) {
+      existing.push(data.id);
+      localStorage.setItem("installedApps",JSON.stringify(existing));
+      alert(`${data.title} installed successfully!`);
+    }
+    else{
+      alert(`${data.title} is already installed!`);
+    }
+  }
   return (
     <div className='bg-gray-200 py-20'>
       <div className='max-w-7xl mx-auto px-20'>
@@ -33,7 +46,7 @@ const AppDetails = () => {
                 <h1 className='font-black text-3xl'>{data.reviews}</h1>
               </div>
             </div>
-            <button className='btn bg-[#00D390] text-white'>Install Now ({data.size})</button>
+            <button onClick={handleInstall} className='btn bg-[#00D390] text-white'>Install Now ({data.size})</button>
           </div>
         </div><br />
         <div>
