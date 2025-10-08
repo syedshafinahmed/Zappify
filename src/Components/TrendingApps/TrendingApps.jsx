@@ -11,7 +11,7 @@ const TrendingApps = ({ data }) => {
                     <h1 className='text=[#001931] font-bold mb-3 text-3xl md:text-5xl'>Trending Apps</h1>
                     <p className='text-[#627382] text-sm md:text-xl'>Explore All Trending Apps on the Market developed by us.</p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-25 md:px-0 lg:px-0'>
+                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-20 md:px-0 lg:px-0'>
                     {
                         data.slice(0, 8).map(dat => <List dat={dat} key={dat.id}></List>)
                     }

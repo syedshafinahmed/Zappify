@@ -32,9 +32,9 @@ const AppDetails = () => {
   }
   return (
     <div className='bg-gray-200 py-20'>
-      <div className='max-w-7xl mx-auto px-20'>
+      <div className='max-w-7xl mx-auto px-10'>
         <div className='flex flex-col md:flex-row gap-x-15 items-center'>
-          <img className='h-70 md:h-90 mb-5 md:mb-5' src={data.image} alt="" />
+          <img className='h-60 md:h-90 mb-5 md:mb-5' src={data.image} alt="" />
           <div>
             <div>
               <p className='text-[#001931] font-bold text-4xl'>{data.title}</p>
