@@ -34,12 +34,12 @@ const Apps = ({ dataPromise }) => {
                         <input className='outline-none' type="search" placeholder="Search Apps" value={searchApp} onChange={e => setSearchApp(e.target.value)} required />
                     </label>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-25 md:px-0 lg:px-0'>
+                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10 md:px-0 lg:px-0'>
                     {
                         // data.map(dat => <List dat={dat} key={dat.id}></List>)
                         // filteredApps.map(dat => <List dat={dat} key={dat.id}></List>)
                         filteredApps.length > 0 ? (filteredApps.map(dat => <List dat={dat} key={dat.id}></List>)) :
-                            <div className='flex flex-col md:flex-row items-center justify-center gap-x-15 mx-auto w-80 md:w-300'>
+                            <div className='flex flex-col md:flex-row items-center justify-center gap-x-15 mx-auto w-44 md:w-300'>
                                 <div className='flex justify-center mt-10'>
                                     <img className='mb-10 w-40 md:w-100' src={SearchError} alt="" />
                                 </div>

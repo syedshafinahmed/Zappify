@@ -47,7 +47,7 @@ const Installation = () => {
                 <div className='flex flex-col md:flex-row px-10 md:px-0  items-center justify-between mb-15'>
                     <h1 className='font-bold text-2xl mb-5 md:mb-0'>{apps.length} Apps found</h1>
                     <div className="dropdown dropdown-start">
-                        <div tabIndex={0} role="button" className="btn m-1"><span className='flex items-center gap-x-2'><p>Sort By Size</p><i class="fa-solid fa-caret-down"></i></span></div>
+                        <div tabIndex={0} role="button" className="btn m-1"><span className='flex items-center gap-x-2'><p>Sort By Downloads</p><i class="fa-solid fa-caret-down"></i></span></div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-30 p-2 shadow-sm">
                             <li><button onClick={() => handleSort("high-low")}>High-Low</button></li>
                             <li><button onClick={() => handleSort("low-high")}>Low-High</button></li>
@@ -66,7 +66,7 @@ const Installation = () => {
                                         <div className='flex justify-center items-center gap-x-2 md:gap-x-5'>
                                             <span className='font-bold badge badge-success'><i class="fa-solid fa-download"></i>{app.downloads}</span>
                                             <span className='font-bold badge badge-warning my-3 md:my-0'><i class="fa-solid fa-star"></i>{app.ratingAvg}</span>
-                                            <p className='text-[#627382]'>{app.size}</p>
+                                            <p className='text-[#627382] text-xs'>{app.size}</p>
                                         </div>
                                     </div>
                                 </div>

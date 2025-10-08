@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 
 const InvalidApp = () => {
   return (
-    <div>
+    <div className='px-5 md:px-0'>
       <div className='flex justify-center mt-10'>
         <img className='mb-10' src={Invalidapp} alt="" />
       </div>
