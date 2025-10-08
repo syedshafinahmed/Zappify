@@ -16,12 +16,31 @@ const Installation = () => {
             autoClose: 1000,
             transition: Bounce,
         });
+    };
+    // const [sortOrder, setSortOrder] = useState(null);
+    const handleSort = (order) => {
+        const parseDownloads = (val) => {
+            if(val.includes("M")) return parseFloat(val) * 1000000;
+            if(val.includes("K")) return parseFloat(val) * 1000;
+            return parseFloat(val);
+        }
+        
+
+        const sortedApps = [...apps].sort((a, b) => {
+            const aDownloads = parseDownloads(a.downloads);
+            const bDownloads = parseDownloads(b.downloads);
+            if (order === "high-low") return bDownloads - aDownloads;
+            if (order === "low-high") return aDownloads - bDownloads;
+            return 0;
+        });
+
+        setApps(sortedApps);
     }
     return (
         <div className='bg-gray-300'>
             <div className='max-w-7xl mx-auto py-15'>
                 <div className='text-center mb-15'>
-                    <h1 className='text=[#001931] font-bold mb-3 text-3xl md:text-5xl'>Your Installed Apps</h1>
+                    <h1 className='text-[#001931] font-bold mb-3 text-3xl md:text-5xl'>Your Installed Apps</h1>
                     <p className='text-[#627382] text-sm md:text-xl'>Explore All Trending Apps on the Market developed by us.</p>
                 </div>
                 <ToastContainer></ToastContainer>
@@ -30,8 +49,8 @@ const Installation = () => {
                     <div className="dropdown dropdown-start">
                         <div tabIndex={0} role="button" className="btn m-1"><span className='flex items-center gap-x-2'><p>Sort By Size</p><i class="fa-solid fa-caret-down"></i></span></div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-30 p-2 shadow-sm">
-                            <li><a>High-Low</a></li>
-                            <li><a>Low-High</a></li>
+                            <li><button onClick={() => handleSort("high-low")}>High-Low</button></li>
+                            <li><button onClick={() => handleSort("low-high")}>Low-High</button></li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +60,7 @@ const Installation = () => {
                         apps.map(app => (
                             <div className='flex justify-between bg-white rounded-xl p-10 items-center mb-5 mx-3 md:mx-0'>
                                 <div className='flex items-center gap-x-10 '>
-                                    <img className='w-30 md:w-20' src={app.image} alt="" />
+                                    <img className='w-32 md:w-20' src={app.image} alt="" />
                                     <div>
                                         <h1 className='text-[#001931] font-medium text-xl mb-3'>{app.title}</h1>
                                         <div className='flex flex-col md:flex-row gap-x-5'>
@@ -51,7 +70,7 @@ const Installation = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button onClick={() => handleUninstall(app.id)} className='btn bg-[#00D390] text-white font-bold'>Uninstalled</button>
+                                <button onClick={() => handleUninstall(app.id)} className='btn bg-[#00D390] text-white font-bold'>Uninstall</button>
                             </div>
 
                         ))
