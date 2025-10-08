@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Download from '../../assets/icon-downloads.png';
 import Review from '../../assets/icon-review.png';
 import Rating from '../../assets/icon-ratings.png'
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bounce, toast, ToastContainer } from 'react-toastify';
 const AppDetails = () => {
   const data = useLoaderData();
-
+  const [clicked, setClicked] = useState(false);
   const handleInstall = () => {
+    setClicked(true);
     const existing = JSON.parse(localStorage.getItem("installedApps")) || [];
-
-    if(!existing.includes(data.id)) {
+    if (!existing.includes(data.id)) {
       existing.push(data.id);
-      localStorage.setItem("installedApps",JSON.stringify(existing));
-      alert(`${data.title} installed successfully!`);
+      localStorage.setItem("installedApps", JSON.stringify(existing));
+      // toast(`${data.title} installed successfully!`);
+      toast.success(`${data.title} installed successfully`, {
+        position: "top-center",
+        autoClose: 2000,
+        transition: Bounce,
+      });
     }
-    else{
-      alert(`${data.title} is already installed!`);
+    else {
+      // toast(`${data.title} is already installed!`);
+      toast.error(`${data.title} is already installed!`, {
+        position: "top-center",
+        autoClose: 2000,
+        transition: Bounce,
+      });
     }
   }
   return (
@@ -46,7 +57,8 @@ const AppDetails = () => {
                 <h1 className='font-black text-3xl'>{data.reviews}</h1>
               </div>
             </div>
-            <button onClick={handleInstall} className='btn bg-[#00D390] text-white'>Install Now ({data.size})</button>
+            <button onClick={handleInstall} disabled={clicked} className={`btn ${clicked ? 'bg-gray-900' : 'bg-[#00D390]'} text-white`}>{clicked ? 'Installed' : `Install Now (${data.size})`}</button>
+            <ToastContainer></ToastContainer>
           </div>
         </div><br />
         <div>
