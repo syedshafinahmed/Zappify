@@ -11,13 +11,13 @@ const AppDetails = () => {
   const handleInstall = () => {
     setClicked(true);
     const existing = JSON.parse(localStorage.getItem("installedApps")) || [];
-    if (!existing.includes(data.id)) {
-      existing.push(data.id);
+    if (!existing.find(app => app.id === data.id)) {
+      existing.push(data);
       localStorage.setItem("installedApps", JSON.stringify(existing));
       // toast(`${data.title} installed successfully!`);
       toast.success(`${data.title} installed successfully`, {
         position: "top-center",
-        autoClose: 2000,
+        autoClose: 1000,
         transition: Bounce,
       });
     }
@@ -25,7 +25,7 @@ const AppDetails = () => {
       // toast(`${data.title} is already installed!`);
       toast.error(`${data.title} is already installed!`, {
         position: "top-center",
-        autoClose: 2000,
+        autoClose: 1000,
         transition: Bounce,
       });
     }
