@@ -11,7 +11,7 @@ const ErrorPage = () => {
         <img src={Error} alt="" />
       </div>
       <div className='text-center mb-10'>
-        <h1 className='text=[#001931] font-bold mb-3 text-3xl md:text-5xl'>Oops, page not found!</h1>
+        <h1 className='text-[#001931] font-bold mb-3 text-3xl md:text-5xl'>Oops, page not found!</h1>
         <p className='text-[#627382] text-sm md:text-xl'>The page you are looking for is not available.</p>
       </div>
       <div className='flex justify-center mb-10'>

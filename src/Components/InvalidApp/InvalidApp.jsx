@@ -12,7 +12,7 @@ const InvalidApp = () => {
       </div>
       <div className='text-center mb-10'>
         <h1 className='text=[#001931] font-bold mb-3 text-3xl md:text-5xl'>Oops!!! App not found!</h1>
-        <p className='text-[#627382] text-sm md:text-xl'>The App you are requesting is not found on our system.  please try another apps.</p>
+        <p className='text-[#627382] text-sm md:text-xl'>The App you are requesting is not found on our system.  please try another app.</p>
       </div>
       <div className='flex justify-center mb-10'>
         <Link to="/home" className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>Go Back</Link>
