@@ -46,7 +46,7 @@ npm run build
 ## 📌 Features
 
 ### Home Page
-<img height="500" alt="zappify-syedshafinahmed netlify app_home" src="https://github.com/user-attachments/assets/da02b670-35f8-4a22-b42b-41518ed70ebb" /> <br>
+<img width="full" alt="zappify-syedshafinahmed netlify app_home" src="https://github.com/user-attachments/assets/da02b670-35f8-4a22-b42b-41518ed70ebb" /> <br>
 
 - Engaging banner with centered heading and **Play Store & App Store** buttons.
 - Dynamic state cards showcasing platform statistics.
@@ -151,6 +151,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
