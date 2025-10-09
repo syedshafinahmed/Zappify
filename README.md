@@ -42,6 +42,79 @@ npm run build
 ---
 
 
+
+## 📌 Features
+
+### Home Page
+
+<img width="135" alt="zappify-syedshafinahmed netlify app_home" src="https://github.com/user-attachments/assets/da02b670-35f8-4a22-b42b-41518ed70ebb" />
+
+- Engaging banner with centered heading and **Play Store & App Store** buttons.
+- Dynamic state cards showcasing platform statistics.
+- **Trending Apps** grid (8 featured apps) with ratings and download counts.
+- **Show All** button to navigate to the All Apps Page.
+- Includes a **Contribute** button linking directly to my GitHub profile.
+
+
+
+
+
+
+
+
+
+### Apps Page
+
+- Displays all available apps **dynamically**.
+- Real-time live search (case-insensitive).
+- Displays total number of apps dynamically.
+- No App Found message for unmatched queries.
+- Clicking any app card redirects to its **App Details Page**, where detailed information and reviews are displayed.
+
+
+
+
+
+
+
+
+
+### App Details Page
+- Detailed layout featuring app image, title, rating, reviews, and downloads.
+- Install button:
+   - Changes to **Installed** upon click.
+   - Disables automatically.
+   - Displays success toast notification.
+   - Saves to LocalStorage.
+- Responsive bar chart created with Recharts showing rating distribution.
+
+
+
+
+### My Installation Page
+
+- Displays all installed apps from **LocalStorage**.
+- Uninstall button removes apps instantly + shows confirmation toast.
+- Supports sorting by download count (High–Low / Low–High).
+
+
+
+
+
+
+
+
+### Error & Loading States
+
+- Custom 404 Error Page for invalid routes.
+- Loading animations during:
+   - Page transitions.
+   - Search operations.
+- Graceful **App Not Found** UI for missing app details.
+
+---
+
+
 ## 🧰 Tech Stack
 
 Zappify is built using a modern front-end tech stack focused on performance, scalability, and responsiveness.
@@ -69,5 +142,6 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
