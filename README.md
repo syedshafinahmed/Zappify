@@ -43,9 +43,9 @@ npm run build
 
 
 
-## 📌 Features
+# 📌 Features
 
-### Home Page
+## Home Page
 <img width="full" alt="zappify-syedshafinahmed netlify app_home" src="https://github.com/user-attachments/assets/da02b670-35f8-4a22-b42b-41518ed70ebb" /> <br>
 
 - Engaging banner with centered heading and **Play Store & App Store** buttons.
@@ -54,18 +54,12 @@ npm run build
 - **Show All** button to navigate to the All Apps Page.
 - Includes a **Contribute** button linking directly to my GitHub profile.
 
+---
 
 
+## Apps Page
 
-
-
-
-
-
-
-### Apps Page
-
-<img height="500" alt="zappify-syedshafinahmed netlify app_home (1)" src="https://github.com/user-attachments/assets/2b6ba4a5-53ed-4981-8614-366923349e84" />
+<img width="full" alt="zappify-syedshafinahmed netlify app_home (1)" src="https://github.com/user-attachments/assets/2b6ba4a5-53ed-4981-8614-366923349e84" /> <br>
 
 - Displays all available apps **dynamically**.
 - Real-time live search (case-insensitive).
@@ -74,16 +68,11 @@ npm run build
 - Clicking any app card redirects to its **App Details Page**, where detailed information and reviews are displayed.
 
 
+---
 
+## App Details Page
 
-
-
-
-
-
-### App Details Page
-
-<img height="500" alt="zappify-syedshafinahmed netlify app_home (3)" src="https://github.com/user-attachments/assets/0ba94a04-d19e-40cb-8e61-07deb283b4d1" />
+<img width="full" alt="zappify-syedshafinahmed netlify app_home (3)" src="https://github.com/user-attachments/assets/0ba94a04-d19e-40cb-8e61-07deb283b4d1" /> <br>
 
 
 - Detailed layout featuring app image, title, rating, reviews, and downloads.
@@ -94,26 +83,27 @@ npm run build
    - Saves to LocalStorage.
 - Responsive bar chart created with Recharts showing rating distribution.
 
+---
 
+## My Installation Page
 
-
-### My Installation Page
-
-<img height="500" alt="zappify-syedshafinahmed netlify app_home (5)" src="https://github.com/user-attachments/assets/adb050f0-03ba-49ed-bad0-53d6f896d5e5" />
+<img width="full" alt="zappify-syedshafinahmed netlify app_home (5)" src="https://github.com/user-attachments/assets/adb050f0-03ba-49ed-bad0-53d6f896d5e5" /> <br>
 
 
 - Displays all installed apps from **LocalStorage**.
 - Uninstall button removes apps instantly + shows confirmation toast.
 - Supports sorting by download count (High–Low / Low–High).
 
+---
 
-### Error & Loading States
+
+## Error & Loading States
 
 <div>
-   <img height="150" alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />&nbsp;&nbsp;
-   <img height="150" alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />&nbsp;&nbsp;
-   <img height="150" alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
-</div>
+   <img height="200" alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />&nbsp;&nbsp;
+   <img height="200" alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />&nbsp;&nbsp;
+   <img height="200" alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
+</div> <br>
 
 - Custom 404 Error Page for invalid routes.
 - Loading animations during:
@@ -151,6 +141,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
