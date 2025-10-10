@@ -32,6 +32,7 @@ const AppDetails = () => {
   }
   return (
     <div className='bg-gray-200 py-20'>
+      <title>Zappify- App Details</title>
       <div className='max-w-7xl mx-auto px-10'>
         <div className='flex flex-col md:flex-row gap-x-15 items-center'>
           <img className='h-60 md:h-90 mb-5 md:mb-5' src={data.image} alt="" />

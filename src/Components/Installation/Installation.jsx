@@ -38,6 +38,7 @@ const Installation = () => {
     }
     return (
         <div className='bg-gray-300'>
+            <title>Zappify-Installation</title>
             <div className='max-w-7xl mx-auto py-15'>
                 <div className='text-center mb-15'>
                     <h1 className='text-[#001931] font-bold mb-3 text-3xl md:text-5xl'>Your Installed Apps</h1>

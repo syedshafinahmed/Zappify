@@ -8,6 +8,7 @@ const Home = ({dataPromise}) => {
     // console.log(data);
     return (
         <div>
+            <title>Zappify-Home</title>
             <Banner></Banner>
             <TrendingApps key={data.id} data={data}></TrendingApps>
         </div>

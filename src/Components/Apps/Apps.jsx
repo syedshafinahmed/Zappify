@@ -11,6 +11,7 @@ const Apps = ({ dataPromise }) => {
 
     return (
         <div className='bg-gray-300 pb-20'>
+            <title>Zappify-Apps</title>
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center mb-15 pt-15'>
                     <h1 className='text-[#001931] font-bold mb-3 text-3xl md:text-5xl'>Our All Applications</h1>
