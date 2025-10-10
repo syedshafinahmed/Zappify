@@ -103,10 +103,10 @@ npm run build
 
 ## Error & Loading States
 
-<div style="display: flex; gap: 10px;">
-   <img width="30%" height="400" alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />
-   <img width="30%" height="400" alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />
-   <img width="30%" height="400" alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
+<div>
+   <img height="200" alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />&nbsp;&nbsp;
+   <img height="200" alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />&nbsp;&nbsp;
+   <img height="200"alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
 </div> <br>
 
 - Custom 404 Error Page for invalid routes.
@@ -145,6 +145,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
