@@ -59,7 +59,11 @@ npm run build
 
 ## Apps Page
 
-<img width="full" alt="zappify-syedshafinahmed netlify app_home (1)" src="https://github.com/user-attachments/assets/2b6ba4a5-53ed-4981-8614-366923349e84" /> <br>
+<div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+   <img width="45%" alt="zappify-syedshafinahmed netlify app_home (1)" src="https://github.com/user-attachments/assets/2b6ba4a5-53ed-4981-8614-366923349e84" />
+   <img width="45%" alt="zappify-syedshafinahmed netlify app_appdetails_100 (1)" src="https://github.com/user-attachments/assets/9127d4cf-9785-467a-92f0-f3a1cc2b66db" />
+</div>
+ <br>
 
 - Displays all available apps **dynamically**.
 - Real-time live search (case-insensitive).
@@ -85,7 +89,7 @@ npm run build
 
 ---
 
-## My Installation Page
+## Installation Page
 
 <img width="full" alt="zappify-syedshafinahmed netlify app_home (5)" src="https://github.com/user-attachments/assets/adb050f0-03ba-49ed-bad0-53d6f896d5e5" /> <br>
 
@@ -99,10 +103,10 @@ npm run build
 
 ## Error & Loading States
 
-<div>
-   <img height="200" alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />&nbsp;&nbsp;
-   <img height="200" alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />&nbsp;&nbsp;
-   <img height="200" alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
+<div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+   <img alt="zappify-syedshafinahmed netlify app_installationvklsdfva" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />
+   <img alt="zappify-syedshafinahmed netlify app_appdetails_100" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />
+   <img alt="zappify-syedshafinahmed netlify app_appdetails_100 (2)" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
 </div> <br>
 
 - Custom 404 Error Page for invalid routes.
@@ -141,6 +145,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
