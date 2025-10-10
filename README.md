@@ -59,7 +59,7 @@ npm run build
 
 ## Apps Page
 
-<div>
+<div align="center">
    <img height="450" alt="Zappify-Apps" src="https://github.com/user-attachments/assets/2b6ba4a5-53ed-4981-8614-366923349e84" />&nbsp;&nbsp;
    <img height="450" alt="Zappify-Apps-Search" src="https://github.com/user-attachments/assets/9127d4cf-9785-467a-92f0-f3a1cc2b66db" />
 </div>
@@ -103,7 +103,7 @@ npm run build
 
 ## Error & Loading States
 
-<div>
+<div align="center">
    <img height="200" alt="Zappify-Page-not-found" src="https://github.com/user-attachments/assets/654cd20d-7c67-4a22-89db-a88f5467e372" />&nbsp;&nbsp;
    <img height="200" alt="Zappify-App-not-Found" src="https://github.com/user-attachments/assets/382d420a-3cb3-43bf-a450-9385798996b7" />&nbsp;&nbsp;
    <img height="200"alt="Zappify-Search-not-Found" src="https://github.com/user-attachments/assets/a8e0d9db-4598-4bd8-9f53-3311c972e0de" />
@@ -145,6 +145,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
