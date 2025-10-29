@@ -7,7 +7,7 @@ Explore top-rated apps, view their stats, install and manage them locally — al
 
 ## 🌐 Live Demo
 
-https://zappify-syedshafinahmed.netlify.app/
+https://zappify-syedshafinahmed.netlify.app/  or  https://zappify-syedshafinahmed.pages.dev/
 
 ---
 
@@ -145,6 +145,7 @@ Each tool plays a key role in ensuring a smooth user experience and maintainable
 - Active route highlighting in navbar.
 - Custom footer & 404 error page.
 - Works flawlessly on reload (no 404 on Netlify routes).
+
 
 
 
